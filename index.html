@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桜の花lime</title>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="top">
+
+        <ul class="nav">
+            <li><img alt="桜" src="/assets/sakura_text_2.png" class="sk"></li>
+            <li><a page="home">home</a></li>
+            <li><a page="about">about</a></li>
+            <li><a page="github">github</a></li>
+            <li><a>other</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/pages/tmnfpatcher.html">tmnfpatcher</a></li>
+                        <li><a href="/pages/coffeev2.html">coffeeOS v2</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="lang-select"><a>Language 🌏</a>
+                <div class="dropdown dropdown-lang">
+                    <ul>
+                        <li><a onclick="setlang('en');">🇺🇸 English</a></li>
+                        <li><a onclick="setlang('jp');">🇯🇵 日本語 (進行中)</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <noscript class="main">
+        <h4><b>Hey!</b> This website requires Javascript for language switching and AJAX page loading. Since you do not
+            have JavaScript enabled, everything we have on the website is shown below for you to see.</h4>
+    </noscript>
+    <div class="main render" style="visibility: collapse;display:none;">
+        <p>
+            <small style="text-align: center;">Loading...</small>
+        </p>
+    </div>
+</body>
+
+</html>
